@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Safety Hub</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            /*background-color: #f5f5f5f6;*/
+            color: #333333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to right , rgb(51, 11, 62) , rgb(44, 245, 241));
+        }
+
+        header {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            display: grid;
+            place-items: center;
+        }
+
+        .news-item {
+            width: 70%;
+            height: auto;
+            margin-bottom: 20px;
+            background-color: #dadada;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 5px 5px 20px black ;
+        }
+        .buttonsContainer{
+            width: 22%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttonsContainer a{
+            padding: 10px 20px 10px 0px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: .5s all;
+        }
+        .buttonsContainer a:hover{
+            letter-spacing: 1px;
+            border-bottom: 1px solid blue;
+        }
+
+        .news-item h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .news-item p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #f51212;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* New styles for Upload New News button */
+        #uploadButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 999; /* Ensure button is above other elements */
+        }
+
+        #uploadButton:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Safety Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="http://127.0.0.1:5500/dashboard.html#">Dashboard</a></li>
+                <li><a href="http://127.0.0.1:5500/loginpage.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="news-item">
+            <h2>Chess robot breaks seven-year-old opponent's finger</h2>
+            <p>A chess-playing robot has been accused of attacking a seven-year-old boy and breaking his finger during a chess match in Moscow.
+            </p>
+            <div class="buttonsContainer">
+                <a href="https://youtu.be/fixQWq3HNZg?si=5DwXZaq2CKXpsQRo">Read more</a>
+                <a href="https://chat.openai.com/share/e9a99ad4-3b0a-4501-90f8-4a1c92717789">Solution</a>
+            </div>
+        </div>
+        <div class="news-item">
+            <h2>AI Chatbot Fails Turing Test, Revealing Flaws in Language Understanding</h2>
+            <p>A conversational AI chatbot failed to pass the Turing Test, raising concerns about the limitations of AI in understanding nuanced human language.</p>
+            <div class="buttonsContainer">
+                <a href="https://youtu.be/fixQWq3HNZg?si=5DwXZaq2CKXpsQRo">Read more</a>
+                <a href="https://chat.openai.com/share/88f52e8a-ed4e-467f-a48c-8b44ea5fba19">Solution</a>
+            </div>
+        </div>
+        <div class="news-item">
+            <h2>Autonomous Vehicle Causes Accident Due to Misinterpreted Sensor Data</h2>
+            <p>An autonomous vehicle collided with another vehicle due to misinterpretation of sensor data, highlighting the challenges of ensuring safety in AI-driven systems.</p>
+            <div class="buttonsContainer">
+                <a href="https://youtu.be/fixQWq3HNZg?si=5DwXZaq2CKXpsQRo">Read more</a>
+                <a href="https://chat.openai.com/share/7abf8085-259b-4deb-a72b-fba7b17fb2b0">Solution</a>
+            </div>
+        </div>
+        <div class="news-item">
+            <h2>Microsoft’s AI Chatbot Tay Trolled</h2>
+            <p>Microsoft stood out as truly newsworthy when they reported their new chatbot. Composing with the slang-loaded voice of a teen, Tay could naturally answer to individuals and take part in easygoing and lively discussion on Twitter.
+            </p>
+            <div class="buttonsContainer">
+                <a href="https://youtu.be/fixQWq3HNZg?si=5DwXZaq2CKXpsQRo">Read more</a>
+                <a href="https://chat.openai.com/share/7aa20e46-6a38-46f0-8339-ba2792e76297">Solution</a>
+            </div>
+        </div>
+        <div class="news-item">
+            <h2>Google hits the headlines for race-changing AI</h2>
+            <p>Google finds itself in hot water after Gemini – the tech giant’s chatbot – allows users to generate several images of humans from a wide variety of different periods and societies.
+            </p>
+            <div class="buttonsContainer">
+                <a href="https://youtu.be/fixQWq3HNZg?si=5DwXZaq2CKXpsQRo">Read more</a>
+                <a href="https://chat.openai.com/share/e03ffefc-6aa9-4507-9ed7-5e82be1224da">Solution</a>
+            </div>
+        </div> 
+        <div class="news-item">
+            <h2>Recommending Unsafe Healthcare Treatments</h2>
+            <p>IBM Watson’s cancer treatment recommendations, some of which were unsafe, showcase AI’s limitations when it comes to complex decision making.
+            </p>
+            <div class="buttonsContainer">
+                <a href="https://youtu.be/fixQWq3HNZg?si=5DwXZaq2CKXpsQRo">Read more</a>
+                <a href="https://chat.openai.com/share/0bbf68ff-beb7-4918-b99b-d6c4ae668931">Solution</a>
+            </div>
+        </div >
+        <div class="news-item">
+            <h2>AI Dating 'Scam': Bengaluru Techie Uses AI To Impress Woman, But Fails In Real Life; Here's What Happened</h2>
+            <p>A Reddit user shared a recent dating disaster she experienced.
+            </p>
+            <div class="buttonsContainer">
+                <a href="https://youtu.be/fixQWq3HNZg?si=5DwXZaq2CKXpsQRo">Read more</a>
+                <a href="https://chat.openai.com/share/d510f7c1-e493-4ba0-9b3b-5ed18911cc07">Solution</a>
+            </div>
+        </div >
+        <div class="news-item">
+            <h2>WIll AI Kill Us All</h2>
+            <p>Robots are planning to destroy all human beings in the world?
+            </p>
+            <div class="buttonsContainer">
+                <a href="https://youtu.be/fixQWq3HNZg?si=5DwXZaq2CKXpsQRo">Read more</a>
+                <a href="https://chat.openai.com/share/d4ed1395-f1a2-4b8d-a2d6-60853c0307e8">Solution</a>
+            </div>
+        </div >
+        <div class="news-item">
+            <h2> How scammers are using AI to fool you</h2>
+            <p> Deepfakes are a form of image enhancing technology which uses AI and Deep Learning techniques to replace a person's face with that of another.
+            </p>
+            <div class="buttonsContainer">
+                <a href="https://youtu.be/fixQWq3HNZg?si=5DwXZaq2CKXpsQRo">Read more</a>
+                <a href="https://chat.openai.com/share/8f4ec61d-50fd-47d4-91de-2b2be5ed285b">Solution</a>
+            </div>
+        </div  >
+        <div class="news-item">
+            <h2>Job Scams Using AI</h2>
+            <p>AI has been used to create fake job listings and interview bots, designed to extract personal and financial information from job seekers
+            </p>
+            <div class="buttonsContainer">
+                <a href="https://youtu.be/fixQWq3HNZg?si=5DwXZaq2CKXpsQRo">Read more</a>
+                <a href="https://chat.openai.com/share/b66c8489-3d45-4b36-a6e0-877170239834">Solution</a>
+            </div>
+        </div >
+        <div class="news-item">
+            <h2>AI can replicate anyone's voice</h2>
+            <p>The Guardian's investigation suggested the "voiceprint" security systems used by Centrelink and the Australian Tax Office (ATO) — which have used the phrase "In Australia, my voice identifies me" — could be fooled.
+            </p>
+            <div class="buttonsContainer">
+                <a href="https://youtu.be/fixQWq3HNZg?si=5DwXZaq2CKXpsQRo">Read more</a>
+                <a href="https://chat.openai.com/share/4dd95b4a-330b-487d-9d24-d860d65f95bb">Solution</a>
+            </div>
+        </div>  
+    </main>
+    <footer>
+        <p>&copy; 2024 AI Gone Wrong. All rights reserved.</p>
+    </footer>
+    <a href="addnewnews.html">
+        <button id="uploadButton">Upload New News</button>
+      </a>
+      <!-- New button for uploading news -->
+</body>
+</html>

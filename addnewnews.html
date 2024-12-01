@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit News and Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #5a774d;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #43a4bd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(56, 52, 52, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+
+
+
+            
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #30b017;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0ede6c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Submit News and Solution</h2>
+        <form action="submit_process.php" method="post">
+            <label for="news">News:</label>
+            <textarea name="news" id="news" rows="4" placeholder="Enter the news here..." required></textarea>
+            
+            <label for="solution">Solution:</label>
+            <textarea name="solution" id="solution" rows="4" placeholder="Enter the solution here..." required></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

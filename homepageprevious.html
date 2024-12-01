@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Safety Hub</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-item h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .news-item p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* New styles for Upload New News button */
+        #uploadButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 999; /* Ensure button is above other elements */
+        }
+
+        #uploadButton:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Safety Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="http://127.0.0.1:5500/dashboard.html#">Dashboard</a></li>
+                <li><a href="http://127.0.0.1:5500/loginpage.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="news-item">
+            <h2>Chess robot breaks seven-year-old opponent's finger</h2>
+            <p>A chess-playing robot has been accused of attacking a seven-year-old boy and breaking his finger during a chess match in Moscow.
+            </p>
+            <p><a href="https://youtu.be/fixQWq3HNZg?si=5DwXZaq2CKXpsQRo">Read more</a></p>
+        </div>
+        <div class="news-item">
+            <h2>First US wrongful detention due to facial recognition tech (January)</h2>
+            <p>Robert Williams becomes the first man to be wrongfully detained based upon facial recognition data after Detroit police arrest him on suspicion of stealing thousands of dollars worth of watches</p>
+            <p><a href="https://tech.co/news/list-ai-failures-mistakes-errors#:~:text=Robert%20Williams%20becomes%20the%20first,image%20on%20Williams'%20driver's%20license.">Read more</a></p>
+        </div>
+        <div class="news-item">
+            <h2>Facebook AI generates vulgar translation for Chinese president (January)</h2>
+            <p>Facebook’s AI-powered translation feature almost causes a diplomatic incident between Myanmar and China after President</p>
+            <p><a href="https://tech.co/news/list-ai-failures-mistakes-errors#:~:text=Robert%20Williams%20becomes%20the%20first,image%20on%20Williams'%20driver's%20license.">Read more</a></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 AI Gone Wrong. All rights reserved.</p>
+    </footer>
+    <button id="uploadButton">Upload New News</button> <!-- New button for uploading news -->
+</body>
+</html>
